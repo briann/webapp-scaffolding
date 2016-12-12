@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
+    "removeComments": false,
+    "stripInternal": true,
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "include": [
+    "client/**/*",
+    "web-server/**/*"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}
