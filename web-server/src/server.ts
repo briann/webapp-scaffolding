@@ -19,7 +19,9 @@ fs.readdirSync(BUNDLE_DIR).forEach((file) => {
 });
 const bundleDigest = bundleHash.digest("hex");
 const bundleBaseUrl = `/static/${bundleDigest}`;
-app.use(bundleBaseUrl, express.static(BUNDLE_DIR));
+app.use(bundleBaseUrl, express.static(BUNDLE_DIR, {
+    maxAge: 1000 * 60 * 60 * 24 * 365, // 1 year
+}));
 // tslint:disable:no-console
 console.info("Serving client-bundle:");
 console.info(`  Location: ${BUNDLE_DIR}`);
