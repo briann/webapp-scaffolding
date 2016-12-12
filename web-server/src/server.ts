@@ -3,11 +3,13 @@ import * as fs from "fs";
 import * as path from "path";
 import * as process from "process";
 import * as crypto from "crypto";
+import * as compression from "compression";
 
 const app = express();
 
 app.set("view engine", "pug");
 app.set("views", "./web-server/templates");
+app.use(compression());
 
 const BUNDLE_DIR = path.join(process.cwd(), "build", "web-server", "client-bundle");
 const bundleHash = crypto.createHash("md5");
