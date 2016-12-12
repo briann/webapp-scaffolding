@@ -12,7 +12,8 @@
     "prod": "npm-run-all clean lint compile bundle-client-prod remove-client-maps run-server",
     "remove-client-maps": "rm build/web-server/client-bundle/*.map",
     "run-server": "node build/web-server/src/server.js",
-    "test": "mocha build/test"
+    "test": "npm-run-all clean lint compile test-server",
+    "test-server": "mocha build/web-server/test"
   },
   "repository": {
     "url": "git@github.com:briann/template.git",
