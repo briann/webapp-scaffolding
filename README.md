@@ -1,4 +1,4 @@
-# Overanalyzed
+# Scaffolding
 
 * Pre-req: `yarn`
 * Run for development (DOES NOT WATCH): `yarn dev`
