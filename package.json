@@ -1,5 +1,5 @@
 {
-  "name": "overanalyzed",
+  "name": "scaffolding",
   "version": "1.0.0",
   "main": "build/web-server/src/server.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "test-server": "mocha build/web-server/test"
   },
   "repository": {
-    "url": "git@github.com:briann/overanalyzed.git",
+    "url": "git@github.com:briann/webapp-scaffolding.git",
     "type": "git"
   },
   "author": "Brian Ngo <brian@brianngo.net>",
