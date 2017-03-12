@@ -1,6 +1,6 @@
-import * as express from "express";
 import * as compression from "compression";
 import * as config from "config";
+import * as express from "express";
 
 import { configureClientBundle } from "./clientBundle";
 
