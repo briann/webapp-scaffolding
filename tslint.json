@@ -1,4 +1,6 @@
 {
   "extends": ["tslint:recommended"],
-  "rules": {}
+  "rules": {
+    "triple-equals": [true, "allow-undefined-check", "allow-null-check"]
+  }
 }
