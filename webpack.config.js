@@ -1,3 +1,5 @@
+const { CheckerPlugin } = require('awesome-typescript-loader');
+
 module.exports = {
   entry: './client/src/app.ts',
   output: {
@@ -12,7 +14,7 @@ module.exports = {
     rules: [
       { 
         test: /\.tsx?$/, 
-        loader: "ts-loader" 
+        loader: "awesome-typescript-loader" 
       },
       { 
         test: /\.js$/, 
@@ -20,5 +22,8 @@ module.exports = {
         enforce: "pre"
       }
     ]
-  }
-}
+  },
+  plugins: [
+    new CheckerPlugin()
+  ]
+};
