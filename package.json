@@ -11,6 +11,8 @@
     "lint": "tslint -c tslint.json 'web-server/**/*.ts*' 'client/**/*.ts*'",
     "server:prod": "NODE_CONFIG_DIR=web-server/config node build/web-server/src/server.js",
     "server:dev": "NODE_CONFIG_DIR=web-server/config nodemon --watch build/web-server build/web-server/src/server.js",
+    "test": "npm-run-all clean lint build:prod test:server",
+    "test:server": "mocha build/web-server/test",
     "watch": "run-p watch:*",
     "watch:client": "webpack -w",
     "watch:server": "tsc -p . -w"
