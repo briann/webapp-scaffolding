@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "build/web-server/src/server.js",
   "scripts": {
-    "clean": "rm -rf build",
     "build:client": "webpack -p",
+    "build:dev": "run-s clean lint watch",
+    "build:prod": "run-s clean lint build:client build:server",
     "build:server": "tsc -p .",
+    "clean": "rm -rf build",
     "lint": "tslint -c tslint.json 'web-server/**/*.ts*' 'client/**/*.ts*'",
     "server:prod": "NODE_CONFIG_DIR=web-server/config node build/web-server/src/server.js",
     "server:dev": "NODE_CONFIG_DIR=web-server/config nodemon --watch build/web-server build/web-server/src/server.js",
