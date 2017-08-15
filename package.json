@@ -48,9 +48,9 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
-    "@blueprintjs/core": "1.11.1",
-    "@blueprintjs/datetime": "1.9.1",
-    "@blueprintjs/table": "1.8.1",
+    "@blueprintjs/core": "^1.24.0",
+    "@blueprintjs/datetime": "^1.19.0",
+    "@blueprintjs/table": "^1.21.0",
     "compression": "1.6.2",
     "config": "^1.25.1",
     "express": "^4.15.2",
