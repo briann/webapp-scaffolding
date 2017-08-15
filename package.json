@@ -42,7 +42,7 @@
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
     "source-map-loader": "^0.2.0",
-    "tslint": "^4.5.1",
+    "tslint": "^5.6.0",
     "typescript": "^2.2.1",
     "typings": "^2.1.0",
     "webpack": "^2.2.1"
