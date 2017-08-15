@@ -44,13 +44,13 @@
     "source-map-loader": "^0.2.0",
     "tslint": "^5.6.0",
     "typescript": "^2.2.1",
-    "typings": "^2.1.0",
     "webpack": "^2.2.1"
   },
   "dependencies": {
     "@blueprintjs/core": "^1.24.0",
     "@blueprintjs/datetime": "^1.19.0",
     "@blueprintjs/table": "^1.21.0",
+    "@types/compression": "^0.0.33",
     "compression": "^1.7.0",
     "config": "^1.25.1",
     "express": "^4.15.2",
